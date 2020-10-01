@@ -18,7 +18,7 @@ describe('helloWorld', function() {
 //unit test for sayHello function
 describe('sayHello', function(){
     it('should be a defined function', function(){
-        expect(typeof sayHello).toBe('function')
+        expect(typeof sayHello).toBe('function');
     });
     it('should return a string when called.', function() {
         expect(typeof sayHello()).toBe('string');
@@ -32,5 +32,21 @@ describe('sayHello', function(){
     it('should return "Hello, Pat!" When sayHello("Pat") is called', function(){
         expect(sayHello('Pat')).toBe('Hello, Pat!');
     });
+    it('should return "Hello, World!" when no parameters are called', function(){
+    expect(sayHello()).toBe('Hello, World!');
+    });
+    it('should return "Hello, World!" when (true)', function(){
+        expect(sayHello(true)).toBe('Hello, World!');
+    });
+    it('should return "Hello, World!" when (false)', function(){
+        expect(sayHello(false)).toBe('Hello, World!');
+    });
 });
 
+
+describe('sayHello', function(){
+    it('should be a defined function', function(){
+        expect(typeof sayHello).toBe('function');
+    });
+
+});
